@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doraemon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .doraemon {
+            position: relative;
+            width: 250px;
+            height: 300px;
+            background: #00aaff;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Face */
+        .face {
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 180px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        /* Eyes */
+        .eye {
+            position: absolute;
+            top: 30px;
+            width: 40px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .eye.left {
+            left: 60px;
+        }
+
+        .eye.right {
+            right: 60px;
+        }
+
+        .pupil {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15px;
+            height: 15px;
+            background: black;
+            border-radius: 50%;
+        }
+
+        /* Nose */
+        .nose {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: red;
+            border-radius: 50%;
+        }
+
+        /* Mouth */
+        .mouth {
+            position: absolute;
+            top: 110px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 100px;
+            background: transparent;
+            border: 2px solid black;
+            border-top: none;
+            border-radius: 0 0 150px 150px;
+        }
+
+        .tongue {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 40px;
+            background: #ff6666;
+            border-radius: 50%;
+        }
+
+        /* Whiskers */
+        .whisker {
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: black;
+        }
+
+        .whisker.left1 {
+            top: 80px;
+            left: 20px;
+        }
+
+        .whisker.left2 {
+            top: 100px;
+            left: 20px;
+        }
+
+        .whisker.left3 {
+            top: 120px;
+            left: 20px;
+        }
+
+        .whisker.right1 {
+            top: 80px;
+            right: 20px;
+        }
+
+        .whisker.right2 {
+            top: 100px;
+            right: 20px;
+        }
+
+        .whisker.right3 {
+            top: 120px;
+            right: 20px;
+        }
+
+        /* Bell */
+        .bell {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background: yellow;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+
+        .bell-line {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            width: 30px;
+            height: 2px;
+            background: black;
+        }
+
+        .bell-dot {
+            position: absolute;
+            top: 30px;
+            left: 23px;
+            width: 8px;
+            height: 8px;
+            background: black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="doraemon">
+        <div class="face">
+            <div class="nose"></div>
+            <div class="mouth">
+                <div class="tongue"></div>
+            </div>
+            <div class="eye left">
+                <div class="pupil"></div>
+            </div>
+            <div class="eye right">
+                <div class="pupil"></div>
+            </div>
+            <div class="whisker left1"></div>
+            <div class="whisker left2"></div>
+            <div class="whisker left3"></div>
+            <div class="whisker right1"></div>
+            <div class="whisker right2"></div>
+            <div class="whisker right3"></div>
+        </div>
+        <div class="bell">
+            <div class="bell-line"></div>
+            <div class="bell-dot"></div>
+        </div>
+    </div>
+</body>
+</html>
